@@ -1,7 +1,7 @@
 var discordAPIKey = 'DISCORD API KEY GOES HERE';
 var mongoConnection = 'MONGO CONNECTION STRING GOES HERE';
 
-// ---- uncomment this part to act like standalone bot ----
+// ---- uncomment this part to act as a standalone bot ----
 // const Discord = require('discord.js');
 // const client = new Discord.Client();
 // ---------------------------------------------------------
@@ -1086,7 +1086,7 @@ exports.initialize = function(client, mongoConnection) {
 	});
 }
 
-// ---- uncomment this part to act like standalone bot ----
+// ---- uncomment this part to act as a standalone bot ----
 client.on('ready', () => {
 	exports.initialize(client, mongoConnection);
 	console.log("I'm ready!");
